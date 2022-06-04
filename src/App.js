@@ -11,7 +11,7 @@ function App() {
     <div>
       <NavBar/>
       <Routes>
-        <Route path="/home" element={<HomeComponent/>}/>
+        <Route path="/" element={<HomeComponent/>}/>
         <Route path="/update" element={<UpdateComponent/>}/>
         <Route path="/delete" element={<DeleteComponent/>}/>
         <Route path="/view" element={<ViewComponent/>}/>
