@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavBar from "../../components/Navigation/NavBar";
+
 import './HomeComponent.css';
 import HeaderComponent from "../../components/Header/HeaderComponent";
 import { db } from "../../firebase-config";
@@ -39,7 +39,7 @@ function HomeComponent() {
     };
     return (
         <div>
-            <NavBar />
+            
             <HeaderComponent name="Add"/>
             <div className="container">
                 <div className="row">
@@ -65,7 +65,7 @@ function HomeComponent() {
                             <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="8.00" value={departure} onChange={(e) => { setDeparture(e.target.value) }} />
                         </div>
                         <div className="nb-3">
-                            <label htmlFor="exampleFormControlInput1" className="form-label">Arrivel</label>
+                            <label htmlFor="exampleFormControlInput1" className="form-label">Arrival</label>
                             <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="11.00" value={arrival} onChange={(e) => { setArrival(e.target.value) }} />
                         </div>
                         <br />
