@@ -10,7 +10,7 @@ function ViewComponent() {
 
     const [schedules, setSchedules] = useState([]);
     useEffect(() => {
-        console.log("useeffet called");
+        
         getSchedules();
     }, [schedules]);
 
